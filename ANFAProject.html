@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <meta name = "key words" content="UX, Case Study">
+    <meta name="Author" content="Camille Beltran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Redesign</title>
+    <link rel="stylesheet" href="stylesheet.css" type ="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">   
+    <script src="website.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <div id="dropDown">
+          <a class="active" href="index.html#projectListt">Projects</a>
+          <div id= "dropMenu">
+            <a href = "DiscordProject.html">Discord Case Study</a>
+            <a class="active" href = "ANFAProject.html">ANFA Site Design</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="Camille Beltran Resume online.pdf">Resume</a>
+      </nav>
+    </header>
+    
+    <main>
+      <article id="projectCard">
+        <img id="bgBlob" src ="blob/greenProject.png"/>
+        <div id="projTitle">
+          <h1>Academy of Neuroscience for Architecture</h1>
+          <h3>A site designed to increase member enrollment, participation, and collaboration.</h3>
+        </div>
+        <div id="projIMGdiv">
+          <img id="projIMG" src="anfa/project.png" />
+        </div>
+      </article>
+      
+       <section id="writeUpIntro">
+        <section>
+          <h5>Overview</h5>
+          <h6>The Academy of Neuroscience for Architecture, an international research organization, was in need of a new site design. My team of 4 worked closely with the president of ANFA to create a mobile and desktop website design that encouraged membership enrollment and participation.</h6>
+        </section>
+        <section>
+          <h5>Role and Contributions</h5>
+          <h6>
+            <b>Lead UX Designer</b>
+            <br>Coordinated and led weekly client meetings
+            <br>Conducted and analyzed up to 17 user interviews
+            <br>Created user personas and style guide
+            <br>Designed interactive lo-fi and hi-fi Figma wireframes
+          </h6>
+        </section>
+      </section>
+
+      <section id="writeUp">
+        <h3><span class="headingBG greenHead">Defining the Challenge</span></h3>
+        <p>
+          The Academy of Neuroscience for Architecture (ANFA) is a growing <strong class=greenStrong>research organization that is planning to expand membership opportunities and global outreach.</strong> The mission of the ANFA is to promote and advance knowledge that links neuroscience research to a growing understanding of human responses to the built environment. ANFA hosts a biennial conference for neuroscientists and architects to gather and share knowledge. Leaders of the organization want to create a bigger impact through hosting more events, facilitating more community building, and through a larger online presence.
+        </p>
+        
+        <h4>Problem Statement</h4>
+        <blockquote class="leftBorder greenLB"><p>How might we further encourage the collaboration of neuroscientists and architects through a new website design?</p></blockquote>
+
+        <h4>Site Objectives</h4>
+        <ul id="sizeup">
+          <li>Promote research collaboration of neuroscientists and architects</li>
+          <li>Attract new members</li>
+          <li>Inform members about events and research opportunities</li>
+          <li>Advise university students of ANFA related classes and educational opportunities</li>
+          <li>Spread knowledge and research findings</li>
+        </ul>
+
+        <h3><span class="headingBG greenHead">Understanding Member Needs</span></h3>
+        <h4>User Interviews</h4>
+        <p>ANFA’s current members are mainly composed of older (45+ years) architects and neuroscientists. Though the conference attracts researchers and architects of all ages (25 years - 60+ years). ANFA’s site needs to appeal to both an <strong class="greenStrong">audience of ages between 25 to 70</strong> and <strong class="greenStrong">be accessible to less computer-savvy individuals.</strong></p>
+        <p>After conducting 17 user interviews with ANFA members, we received a diverse range of feedback. We synthesized our data to create user personas and to find commonalities to identify the minimum viable product feature set.</p>
+
+        <h4>Major Findings</h4>
+        <blockquote class="leftBorder greenLB">
+          <ul>
+            <li>Both architects and scientists feel undervalued in ANFA</li>
+            <li>No sense of community between members</li>
+            <li>Not enough communication between architects and scientists</li>
+            <li>Research grant information is extremely important</li>
+          </ul>
+        </blockquote>
+
+        <h4>User Personas</h4>
+        <p>To pin point user frustrations and needs, we created three personas. The primary personas are Joseph Lee, a neuroscientist, and Ben San, an architect. The secondary persona focuses on Lauren Diego, a neuroscientist who is new to ANFA and represents the younger generation of ANFA. These personas were a clear representation of our target audience and helped guide us through determining the MVP features.</p>
+        <div class="row">
+          <div class="column">
+            <img src="anfa/Letter - 1.png" alt="Joseph Lee Persona" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="anfa/Letter - 2.png" alt="Ben San Persona" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="anfa/Letter - 4.png" alt="Lauren Diego Secondary Persona" onclick="myFunction(this);">
+          </div>
+        </div>
+        <div class="container">
+          <!-- Close the image -->
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <!-- Expanded image -->
+          <img id="expandedImg" style="width:100%">
+          <!-- Image text -->
+          <div id="imgtext"></div>
+        </div>
+
+        <h4>MVP Features</h4>
+        <p>Members and leaders of ANFA agree that <strong class="greenStrong">channels of communication and community building are necessary</strong> to continue building the organization. The features below are required on the site so that it can fulfill the needs of ANFA.</p>
+        <ul>
+          <li>Login and Register Pages</li>
+          <li>Ability to post and respond to articles, blogs, and research</li>
+          <li>Event listings page and information</li>
+          <li>Member directory with search and filter abilities</li>
+          <li>Register for conferences, submit abstracts, search through abstracts</li>
+          <li>Search through posted research</li>
+        </ul>
+
+        <h3><span class="headingBG greenHead">Beginning our Design</span></h3>
+        <h4>Tag Teaming the Site</h4>
+        <p>Due to the size of the website, sections were divided amongst two teams. My team designed the Home page, Education section, Events section, About section, Sign In page, Register page, Page Not Found page, and footer. Both teams collaborated on the header/navigation bar design and the style guide.</p>
+        <p><b>My individual contributions:</b></p>
+        <ul>
+          <li>UI Sketches: Events section, Education section, navigation menu, and footer</li>
+          <li>Low fidelity design of the mobile navigation menu</li>
+          <li>Low and high fidelity prototypes of the Education section, and desktop side menu design</li>
+          <li>Low and high fidelity event listing format in the Events section</li>
+          <li>Final design/high fidelity prototype of Page Not Found page</li>
+        </ul>
+        
+        <h4>UI Sketches</h4>
+        <p>Before we started creating wireframes, <strong class="greenStrong">we sketched out possible design solutions</strong> for our assigned sections. UI sketching allowed us to quickly iterate through various designs, <strong class="greenStrong">focused on layout rather than details.</strong> Below are UI sketches I created and chose to wireframe. All UI sketches were made for mobile.</p>
+        <div class="centerItems">
+            <img class="sizedown" src="anfa/sketches/navmenuSketch.png" alt="Navigation Menu Sketch">
+            <img class="sizedown" src="anfa/sketches/eventsSketch.png" alt="Event Section Sketch">
+            <img class="sizedown" src="anfa/sketches/footer.png" alt="Footer Sketch" >
+        </div>
+
+        <h4>Adapting to our Client</h4>
+        <p>After looking through the UI sketches, our client requested different pages for the Education section. Because the team member responsible for the section was absent at the meeting, we decided to switch sections. The client was very specific about what they wanted so it was important that the pages be designed by someone who understood the request.</p>
+        <section class="centerItems">
+          <img id="sketch" src="anfa/sketches/educationsketch.jpeg" alt="Education Section Sketch">
+        </section>
+
+        <h4>Style Guide</h4>
+        <p>Before building any wireframes, we produced a style guide. The style guide kept our design features consistent across all our prototypes. Our client requested that the color palette for the site be composed of “safe” colors and grey tones. To satisfy our client’s requests, we chose a dark grey as our primary color. Red is used as an accent color to give the site a pop of color and to direct users to clickable items. Because of their readability, Poppins and Open Sans, two sans serif fonts, were chosen for the typography. This is especially important for our older views and because the ANFA site will be a very text heavy site. </p>
+        <section class="centerItems">
+          <img id="styleGuide" src="anfa/final/Final Branding.png" alt="Style Guide">
+        </section>
+
+        <h3><span class="headingBG greenHead">Building Wireframes</span></h3>
+        <h4>Low-Fidelity Wireframes</h4>
+        <p>Mobile and desktop wireframes were created from the sketches above.</p>
+        <p><b>ANFA Related Courses Page</b></p>
+        <p>These pages would promote the study of neuroscience and architecture with current students, leading to more membership enrollment.</p>
+        <section class="centerItems">
+          <img class="lowfiMWF" src="anfa/lfWf/relatedWF.png" alt="ANFA Related Courses Low Fidelity Mobile Wireframe">
+          <img class="lowfiDWF" src="anfa/lfWf/edu related courses.png" alt="ANFA Related Courses Low Fidelity Desktop Wireframe">
+        </section>
+        <p><b>Topic Page</b></p>
+        <p>This would inform visitors of latest news or research findings of specific topics or fields of study, especially those related to education.</p>
+        <section class="centerItems">
+          <img class="lowfiMWF" src="anfa/lfWf/topicLfWf.png" alt="ANFA Topic Page Low Fidelity Mobile Wireframe">
+          <img class="lowfiDWF" src="anfa/lfWf/edu topic 1.png" alt="ANFA Topic Page Low Fidelity Desktop Wireframe">
+        </section>
+        <p><b>Center for Education</b></p>
+        <p>This page allows students to join ANFA's Center for Education program which encourages collaboration between neuroscientists and architects and informs students of educational opportunities.</p>
+        <section class="centerItems">
+          <img class="lowfiMWF" src="anfa/lfWf/aceLfWf.png" alt="ANFA Center for Education Low Fidelity Mobile Wireframe">
+          <img class="lowfiDWF" src="anfa/lfWf/edu ACE.png" alt="ANFA Center for Education Low Fidelity Desktop Wireframe">
+        </section>
+        <h4>High-Fidelity Wireframes</h4>
+        <p>For most pages of our low fidelity wireframes, we were given minimal feedback, such as telling what pictures to add or what small feature to edit. However, our client requested that I add a discussion forum and a recent event list to the Education Topic page and that I change the reading list to look similar to a directory. </p>
+        <div class="scroll">
+          <img src="anfa/hfWf/Edu T1.png" alt="Education Topic Page High Fidelity Desktop Wireframe">
+        </div>
+        <br>
+        <p>While looking over the designs, we realized that the Page Not Found page was not helpful or informative. To <span class="greenStrong">make the page more useful to users, I added ANFA's mssion statement, conference information, and a site map.</span> The mission statement would inform new users about the purpose of ANFA. In addition, according to our user interview data, <span class="greenStrong">most users go on ANFA's site for conference information.</span> The site map gives an overview of the entire website, so users can see what pages are under each section. </p>
+        <!--
+        <input type="button" class="beforeAfter before" onclick="changeImage2()" id="beforeButton" value="Before" />
+        <input type="button" class="beforeAfter" onclick="changeImage()" id="afterButton" value="After" />
+        <div class="scroll">
+          <img src="anfa/404 Page Not Found.png" id="beforeAfter" alt="Page Not Found Low Fidelity Desktop WireFrame">
+        </div>
+      -->
+        <section class="centerItems">
+          <figure class="altPG">
+            <img src="anfa/lfWf/404 Page Not Found.png"/>
+            <figcaption>Page Not Found Before</figcaption>
+          </figure>
+          <figure class="altPG">
+            <img src="anfa/hfWf/Page Not Found.png"/>
+            <figcaption>Page Not Found After</figcaption>
+          </figure>
+        </section>
+        <h3><span class="headingBG greenHead">Final Iteration</span></h3>
+        <p>The high fidelity wireframes were user tested. Below are the final designs of the pages and their changes.</p>
+        <h4>Education Landing Page</h4>
+        <p>Users wanted a general information page for each section to navigate to before navigating to a subpage. This page allows users to discover the purposes of the subpages without searching through the entire section.</p>
+        <div class="scroll">
+          <img src="anfa/final/edu landing page.png" alt="Education Landing Page High Fidelity Desktop Prototype">
+        </div>
+        <br>
+        <h4>ANFA Center for Education Page</h4>
+        <p>Hyperlinks were changed to be red so that they are more easily seen and emphasized.</p>
+        <div class="scroll">
+          <img src="anfa/final/Edu ACE 1.png" alt="ANFA Center for Education High Fidelity Desktop Prototype">
+        </div>
+        <br>
+        <h4>ANFA Related Courses Page</h4>
+        <p>The chosen country is bolded and red. Pictures related to the listed colleges have been added and hyperlinks are red.</p>
+        <div class="scroll">
+          <img src="anfa/final/Edu Courses.png" alt="ANFA Related Courses High Fidelity Desktop Prototype">
+        </div>
+        <br>
+        <h4>Education Topic Page</h4>
+        <p>To verify that only members of ANFA use the discussion forum, a “Sign in” has been added. In addition, popups, shown above, were added to the like, reply, and bookmark button for comments in the discussion forum as well.</p>
+        <div class="scroll">
+          <img src="anfa/final/topic.png" alt="Education Topic Page High Fidelity Desktop Prototype">
+        </div>
+        <br>
+        <h4>Page Not Found Page</h4>
+        <p>Users were slightly confused by the site map. A label for the Site Map was added for clarity.</p>
+        <div class="scroll">
+          <img src="anfa/final/Page Not Found.png" alt="Page Not Found High Fidelity Desktop Prototype">
+        </div>
+      </section>
+    </main>
+    
+
+    <footer>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="index.html#projectList">Projects</a>
+        <a href="about.html" >About</a>
+        <a href="Camille Beltran Resume online.pdf">Resume</a>
+      </nav>
+      <h6> @2021 by Camille Beltran </h6>
+    </footer>
+  </body>
+</html>
+

@@ -1,27 +1,74 @@
-
+/*
+TYPOGRAPHY
+*/
 p{
-    color: black;
-    font-family: Verdana, sans-serif;
-    font-size:  1.3rem;
-}
-
-h6{
-    color: black;
-    font-family: Verdana, sans-serif;
-    font-size:  14px;
+    color: #2F3737;
+    font-family: Nunito, sans-serif;
+    font-size:  1.13rem;
     font-weight: 400;
 }
 
-h4{
-    color: black;
+h1{
+    color: #2F3737;
     font-family: Poppins, sans-serif;
-    font-size:  25px;
-    font-weight: 600;
+    font-size:  3rem;
+    line-height: 100%;
+    font-weight: 700;
+}
+h2{
+    color: #2F3737;
+    font-family: Poppins, sans-serif;
+    font-size:  1.6rem;
     line-height: 130%;
 }
-/* 
+h3{
+    color: #2F3737;
+    font-family: Poppins, sans-serif;
+    font-size:  1.6rem;
+    line-height: 130%;
+    font-weight: 700;
+}
 
-GRID
+h4{
+    color: #2F3737;
+    font-family: Poppins, sans-serif;
+    font-size:  1.3rem;
+    font-weight: 600;
+    padding-top: 0.3rem;
+    margin-bottom: .9rem;
+}
+
+h5{
+    color: #2F3737;
+    font-family: Poppins, sans-serif;
+    font-size:  1.13rem;
+    font-weight: 600;
+    margin-bottom: -1.2rem
+}
+
+h6{
+    color: #2F3737;
+    font-family: Nunito, sans-serif;
+    font-size:  1rem;
+    font-weight: 400;
+}
+strong{
+    font-weight: normal;
+    background: linear-gradient(to top, #FFF185 50%, transparent 50%);
+}
+.greenStrong{
+    background: linear-gradient(to top, #C7FAD2 50%, transparent 50%);
+}
+li{
+    font-family: Nunito,sans-serif;
+    font-size: 1.13rem;
+    color: #2F3737;
+}
+.compAn li{
+    font-size: 1rem;
+}
+/* 
+GRID 
 */
 body{
     display: grid;
@@ -29,12 +76,9 @@ body{
     max-width: 940px;
     margin: auto;
     padding: 0px 2rem 0px 2rem;
-   
 }
-/* 
-
+/*
 NAVIAGTION MENU
-
 */
 header nav{
     margin-top: 1rem;
@@ -42,12 +86,12 @@ header nav{
 }
 nav a{
     display: inline-block;
-    color: black;
+    color: #2F3737;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: Verdana, sans-serif;
-    font-size:  16px;
+    font-family: Nunito, sans-serif;
+    font-size:  1rem;
 }
 nav a:hover:not(.active) {
   color: #EA906E;
@@ -56,8 +100,9 @@ nav a:hover:not(.active) {
     background-image: url("blob/menublob.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 90% 70%;
     color: #EA906E;
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 40px;
 }
 #dropDown {
@@ -75,93 +120,8 @@ nav a:hover:not(.active) {
   font-size: 14px;
 }
 #dropDown:hover #dropMenu{display: block;}
-/* 
-
-INTRODUCTION IN HOME PAGE
-
-*/
-#intro{
-    display: grid;
-    margin: auto;
-    grid-template-columns: auto min-content;
-    
-}
-#introtext{
-    margin: auto
-}
-#name {
-    color: #EA906E;
-    font-weight: bolder;
-    font-size: 4.8rem;
-    font-family: 'Poppins', sans-serif;
-    line-height: 100%;
-    margin-top: 0px;
-    margin-bottom: -1.4rem;
-  }
-#jobTitle{
-    font-weight: lighter;
-    font-size: 1.1rem;
-    color: #68727A;
-    font-style: italic;
-    margin-left: 5px;
-    margin-right: -10px;
-}
-#describe{
-    margin-left: 0.5rem;
-    margin-right: 0px;
-}
-#meHomeIMG{
-   z-index: -1;
-}
-#blob1{
-    position: absolute;
-    z-index: -1;
-    margin-top: -20px;
-    margin-left: -20px;
-}
 /*
-
-PROJECT DISPLAY BOXES
-
-*/
-.projectLink{
-    text-decoration: none;
-}
-.projectListing{
-    width: 600px;
-    height: 230px;
-    margin: 70px auto auto auto;
-    padding: 10px 40px 10px 40px;
-    border-radius: 30px;
-    border: 1px solid #E2DDDD;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.projectListing:hover:not(.active) {
-  color: #EA906E;
-  box-shadow: 2px 3px 7px  #C5C5C5;
-}
-.projectListing p{
-    font-size: 18px;
-    color: black;
-}
-.projectIMG{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.projectListing img{
-    height: 220px;
-}
-.projectListing h4{
-    margin-top: 35px;
-    margin-bottom: -10px;
-}
-/*
-
 FOOTER
-
 */
 footer{
     margin: auto;
@@ -180,6 +140,351 @@ footer .active{
     color: #EA906E;
     font-weight: bold;
 }
+/* 
+INTRODUCTION IN HOME PAGE
+*/
+#intro{
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto min-content;
+}
+#centertext{
+    margin: auto
+}
+#name {
+    color: #EA906E;
+    font-weight: bold;
+    font-size: 4.8rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 100%;
+    margin-top: 0px;
+    margin-bottom: -1.4rem;
+  }
+#jobTitle{
+    font-weight: lighter;
+    font-size: 1.1rem;
+    color: #68727A;
+    font-style: italic;
+    margin-left: 5px;
+    margin-right: -10px;
+}
+#describe{
+    margin-left: 0.5rem;
+    margin-right: 0px;
+    font-size: 1.3rem;
+}
+#meHomeIMG{
+   z-index: -1;
+}
+#blob1{
+    position: absolute;
+    z-index: -1;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+/*
+PROJECT DISPLAY BOXES
+*/
+.projectLink{
+    text-decoration: none;
+}
+#projectList{
+    text-decoration: none;
+}
+.projectListing{
+    width: 600px;
+    height: 230px;
+    margin: 70px auto auto auto;
+    padding: 10px 40px 10px 40px;
+    border-radius: 30px;
+    border: 1px solid #E2DDDD;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.projectListing:hover:not(.active) {
+  color: #EA906E;
+  box-shadow: 2px 3px 7px  #C5C5C5;
+}
+.projectIMG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectListing img{
+    height: 220px;
+}
+.projectListing h3{
+    margin-top: 35px;
+    margin-bottom: -10px;
+}
+/*ABOUT PAGE*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutPic{
+    max-height: 70vh;
+    margin-right: 3rem;
+    justify-content: center;
+    }
+#helloMouse{
+    cursor: url("about/hi.png"),default;
+}
+.about h1{
+    color:#EA906E;
+    margin-top: 0rem;
+}
+.about a{
+    color: #EA906E;
+}
+
+/*
+PROJECT PAGE Title
+*/
+#projectCard{
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto min-content;
+    position: relative;
+}
+#bgBlob{
+    z-index: -1;
+    position: absolute;
+    max-width: 100%;
+    min-height: 100%;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+#projIMGdiv{
+    max-width: 400px;
+    justify-self: center;
+    margin: auto;
+    padding-right: 3.5rem;
+}
+#projIMG{
+    max-width: 25rem;
+}
+#projTitle{
+    margin: auto;
+    padding: 3.5rem 0rem 3.5rem 3.5rem;
+
+}
+#projTitle h3{
+    font-weight: 400;
+}
+/*
+PROJECT PAGE Write Up
+*/
+#writeUpIntro{
+    padding: 0rem 0rem 0rem 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    margin-bottom: -2rem;
+}
+#writeUpIntro h5{
+    font-size: 1rem;
+}
+#writeUp{
+    padding: 0rem 3.5rem 0rem 3.5rem;
+}
+#writeUp h3{
+    margin-top: 3rem;
+}
+.headingBG{
+    background-image: url("blob/disHeadingBlob.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+}
+.headingBG.greenHead{
+    background-image: url("blob/greenHeadBlob.png");
+}
+.centerItems{
+    text-align: center;
+}
+.sizedown{
+    max-width: 20rem;
+    max-height: 20rem;
+}
+/*LEFT BORDER FOR PROBLEM STATEMENT ETC*/
+.leftBorder{
+    padding-left: 1rem;
+    border-left: 0.7rem solid #FFF185;
+}
+.leftBorder p{
+    font-size: 1.3rem;
+}
+.leftBorder.greenLB{
+    border-color: #C7FAD2;
+}
+/*INTERVIEW FINDINGS in Discord Project*/
+.twoCol{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+
+}
+.twoCol > div {
+    border-left: 0.4rem solid #FFF185;
+    padding-left: 1rem;
+}
+/*COMPETITIVE ANALYSIS in Discord Project*/
+.logo{
+    width: 4rem;
+    float: right;
+}
+.compAn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
+    background-color: #FFF185;
+}
+.compAn > div {
+    background-color: white;
+    padding: 1rem;
+}
+.compAn h6{
+    margin-bottom: -0.5rem;
+}
+
+/*Sketch Gallery in Discord Project*/
+.gallRow{
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+.galleryPic{
+  position: relative;
+  display: none;
+}
+.sketches{
+    width: 15rem;
+}
+/*Write up*/
+figcaption{
+    font-family: Nunito, sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.persona{
+    max-width: 40rem;
+    box-shadow: 2px 3px 7px  #C5C5C5;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+}
+.prototypeGIF{
+    max-width: 100%;
+}
+#userResults{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1rem;
+}
+#userResults figure{
+    margin: 0px;
+}
+.altPG{
+    display: inline-block;
+    margin: 1rem 1rem 0rem 0rem;
+}
+.altPG img{
+    width: 23rem;
+}
+#sketch{
+    max-width: 30rem;
+}
+#styleGuide{
+    max-width: 90%;
+}
+.lowfiMWF{
+    max-width: 33rem;
+    max-height: 31rem;
+}
+.lowfiDWF{
+    max-width: 30rem;
+    max-height: 30rem;
+    border: 1px solid #2F3737;
+}
+
+/* Style the images inside the grid ANFA project*/
+.column img {
+  cursor: pointer;
+  max-width: 12rem;
+  max-height: 12rem;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;;
+    justify-items: center;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #2F3737;
+  font-size: 35px;
+  cursor: pointer;
+}
+/*Scrolling for images*/
+.scroll{
+    max-height: 90vh;
+    overflow-y: scroll;
+    border: 1px solid #2F3737;
+    scroll-snap-type: y proximity;
+}
+.scroll img{
+    max-width: 100%;
+}
+.beforeAfter{
+    font-family: Nunito, sans-serif;
+    font-size: 1.13rem;
+    font-weight: 400;
+    border: 1px #C7FAD2 solid;
+    color: #2F3737;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-radius: 30px;
+    width: 5rem;
+}
+.beforeAfter:hover{
+    font-weight: bold;
+}
+.beforeAfter.before{
+    background-color: #C7FAD2;
+    font-weight: 600;
+}
+
+
 /*
 
 RESPONSIVE DESIGN
@@ -190,6 +495,25 @@ RESPONSIVE DESIGN
     /* 
 
     GRID
+    #projectCard h1{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+#projectCard h3{
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    width: 28ch;
+}
+#projIMG{
+    max-width: 45%;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    margin: auto;
+}
     */
   
     /* 
@@ -243,7 +567,7 @@ RESPONSIVE DESIGN
     }
     .projectListing p{
         font-size: 18px;
-        color: black;
+        color: #1C2121;
     }
     .projectIMG{
         display: flex;

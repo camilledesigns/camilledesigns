@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <meta name = "key words" content="UX, Case Study">
+    <meta name="Author" content="Camille Beltran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Redesign</title>
+    <link rel="stylesheet" href="stylesheet.css" type ="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">   
+    <script src="website.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <div id="dropDown">
+          <a class="active" href="index.html#projectList">Projects</a>
+          <div id= "dropMenu">
+            <a class="active" href = "DiscordProject.html">Discord Case Study</a>
+            <a href = "ANFAProject.html">ANFA Site Design</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="Camille Beltran Resume online.pdf">Resume</a>
+      </nav>
+    </header>
+  
+    <main>
+      <!--TITLE CARD-->
+      <article id="projectCard">
+        <img id="bgBlob" src ="blob/yellowProject.png"/>
+        <div id="projTitle">
+          <h1>Discord Redesign</h1>
+          <h3>Promoting a welcoming atmosphere by creating and reordering communication channels.</h3>
+        </div>
+        <div id="projIMGdiv">
+          <img id="projIMG" src="discord/Frame 1.png" style="padding-top:2rem"/>
+        </div>
+      </article>
+      <!--WRITE UP-->
+      <section id="writeUpIntro">
+        <section>
+          <h5>Overview</h5>
+          <h6>Because of the pandemic and quarantine, many student organizations have moved their outreach and events to the online messaging platform, Discord. Unfortunately for most, this was a hard adjustment and it has led to lower member participation. In this case study, I redesigned Discord to better facilitate community building.</h6>
+        </section>
+        <section>
+          <h5>Role and Contributions</h5>
+          <h6>
+            <b>Sole UX Designer</b>
+            <br>
+            Conducted over 5 hours of user interviews and testing
+            <br>
+            Created user personas, identified pain points and needs
+            <br>
+            Produced UI sketches, low and high fidelity prototypes
+          </h6>
+        </section>
+      </section>
+      <section id="writeUp">
+        
+        <h3><span class="headingBG">Defining the Challenge</span></h3>
+        <p>
+          Though Discord servers grew in size as students continued to join, many student organizations saw that participation in servers and club activities were down significantly compared to in person events. Leaders of student organizations found it <strong>hard to connect and engage</strong> with new and returning members over Discord’s platform and those new to Discord found it <strong>confusing and intimidating</strong> to use.
+        </p>
+        
+        <h4>Problem Statement</h4>
+        <blockquote class="leftBorder"><p>How might we bridge the gap between organization leaders and members so that they feel more connected and engaged with each other?</p></blockquote>
+
+        <h3><span class="headingBG">Empathizing with Users</span></h3>
+        <p>Before designing a solution, initial interviews were conducted with an array of Discord users, ranging from new and inexperienced to advanced and adept. The objective of interviews was to find common frustrations that contributed to low engagement and participation.</p>
+      
+        <h4>Major Findings</h4>
+        <section class="twoCol">
+          <div>
+        <p>
+          <b>Confusing Interface</b>
+        </p><p>
+          All participants felt that there is a <strong>learning curve and needed time to adjust to Discord.</strong> This has led to members feeling isolated when joining larger servers that contain a variety of bots and text channels.
+        </p><p>
+          "Big clubs can be overwhelming because there's like 500 people and 15 different channels."
+        </p>
+        </div><div>
+        <p>
+          <b>Limited Outreach Ability</b>
+        </p><p>
+          Organization leaders felt constrained by Discord. It <strong>lacks a way to effectively communicate events</strong> to their members. Announcements and events often go unread because of the long streams of text announcing them. 
+        </p><p>
+          "The more stuff you have going on, the harder it is to advertise because they all get buried by each other."
+        </p>
+      </div>
+      </section>
+        <h4>Understanding Users</h4>
+          <p>User personas were created to identify the users’ needs that weren’t being met and to help guide the design process. </p>
+        <section class="centerItems">
+        <img class="persona" src="discord/joe.png"/>
+        <img class="persona" src="discord/Instagram Post - 1.png"/>
+        </section>
+        <h4>Competitive Analysis</h4>
+        <section class="compAn">
+          <div>
+            <h5>Discord</h5>
+            <img class="logo" src="discord/Discord-Logo.png">
+            <h6>Strengths</h6>
+            <ul>
+              <li>Voice, video, and text capabilities</li>
+              <li>Customizable features (bots)</li>
+              <li>Multiple channels: easy to organize topics/conversations</li>
+              <li>Dedicated channels for voice chat</li>
+            </ul>
+            <h6>Weaknesses</h6>
+            <ul>
+              <li>Challenging to add bots</li>
+              <li>Joining a large server can be confusing</li>
+              <li>No good way to show events and programs</li>
+              <li>Settings are hard to find</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Slack</h5>
+            <img class="logo" src="discord/icon_slack_hash_colored.png">
+            <h6>Strengths</h6>
+            <ul>
+              <li>Voice, video, and text capabilities</li>
+              <li>Multiple channels: easy to organize topics/conversations</li>
+              <li>Members can connect to Google Calendars and show their schedule</li>
+            </ul>
+            <h6>Weaknesses</h6>
+            <ul>
+              <li>Limited features in free version</li>
+              <li>Older messages automatically get deleted</li>
+              <li>Video chat is limited to two people at a time</li>
+            </ul>
+          </div>
+          <div>
+            <h5>FB Messenger</h5>
+            <img class="logo" src="discord/Logo_Messenger_NewBlurple-399x399-1.png">
+            <h6>Strengths</h6>
+            <ul>
+              <li>Voice, video, and text capabilities</li>
+              <li>Easy to use interface</li>
+              <li>Set reminders, either reoccurring or for specific events/days </li>
+            </ul>
+            <h6>Weaknesses</h6>
+            <ul>
+              <li>Very limited features</li>
+              <li>No way to organize messages</li>
+              <li>Voice and video have poor-quality</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Zoom</h5>
+            <img class="logo" src="discord/Zoom-Emblem.png">
+            <h6>Strengths</h6>
+            <ul>
+              <li>Voice, video, and text capabilities</li>
+              <li>Easy to use interface</li>
+              <li>Ability to set meeting times and send invites</li>
+            </ul>
+            <h6>Weaknesses</h6>
+            <ul>
+              <li>Very limited features</li>
+              <li>Text chat is available only during calls</li>
+              <li>No way to organize text chats </li>
+              <li>Only good for video calls, voice calls, and presentations</li>
+            </ul>
+          </div>
+        </section>
+        <p>
+          Slack, Facebook Messenger, Zoom and Discord are the most common applications that student organizations use to reach out to members or conduct club affairs
+        </p><p>
+          Each competitor had a way to easily integrate a calendar or a reminder of an event to all users. Messenger and Zoom's interfaces were simple and easy to use while Discord and Slack’s were more confusing and harder to navigate.  
+        </p>
+
+        <h3><span class="headingBG">The Solution</span></h3>
+        <p>
+          To bridge the gap between server members and admins, I decided to add a <strong>calendar feature and pages for server/organization information</strong>(including its channels, bots, and admin members).
+        </p><p>
+          With these new features, admins can <strong>better advertise events</strong> and members will have a greater understanding of how the organization and its server operates. This should <strong>mitigate the confusion and intimidation</strong> that members feel when joining larger servers.
+        </p>
+        <h4>Ideating through Quick Sketching</h4>
+        <p>
+          To start off the design process, I used quick sketching. It encourages creativity and is perfect for generating design ideas. I created over 20 sketches of page designs and from there, I was able to look through the designs and identify the two I thought were best. From there, I created prototypes of them.
+        </p>
+        <div class="gallRow">
+          <div class="gallCol">
+            <img class="sketches" src="discord/sketch2.png" alt="Interface Sketch 1"/>
+          </div>
+          <div class="gallCol">
+            <img class="sketches" src="discord/sketch3.png" alt="Interface Sketch 2"/>
+          </div>
+          <div class="gallCol">
+            <img class="sketches" src="discord/sketch4.png" alt="Interface Sketch 3"/>
+          </div>
+          <div class="gallCol">
+            <img class="sketches" src="discord/sketch5.png" alt="Interface Sketch 4"/>
+          </div>
+          <div class="gallCol">
+            <img class="sketches" src="discord/sketch6.png" alt="Interface Sketch 5"/>
+          </div>
+          <div class="gallCol">
+            <img class="sketches" src="discord/sketch7.png" alt="Interface Sketch 6"/>
+          </div>
+          <div class="gallCol">
+            <img class="sketches" src="discord/sketch8.png" alt="Interface Sketch 7"/>
+          </div>
+          <div class="gallCol">
+            <img class="sketches" src="discord/sketch9.png" alt="Interface Sketch 8"/>
+          </div>
+          <div class="gallCol">
+            <img class="sketches" src="discord/sketch1.png" alt="Interface Sketch 9"/>
+          </div>
+        </div>
+        <h3><span class="headingBG">Design. Test. Repeat.</span></h3>
+        
+        <p>
+          <strong>Each prototype was user tested with current Discord users,</strong> both leaders and members of student organizations. Some were very new to Discord (ie. started using Discord within the past three months) while others had been using it for years. A/B and task based testing was performed. 
+        </p>
+        
+        <h4>Prototype 1</h4>
+        <p>
+          The home page contains 6 separate subpages: Calendar, Admin Introductions,  Channel/Roles, Resources, Bots, and Settings. The calendar is the default subpage of the home page. The Channels/Roles section has all public channels and roles shown and users can customize their channels and roles by either checking or unchecking the boxes by each one. 
+        </p>
+        <figure>
+          <img class="prototypeGIF" src="discord/prototype1.gif" alt="Gif of Prototype 1"/>
+          <figcaption>Prototype 1</figcaption>
+        </figure>
+        <section id="userResults">
+          <div >
+            <figure>
+              <img class="prototypeGIF" src="discord/usertesting.gif"/>
+              <figcaption>Prototype 1 User Testing Session<br>User took 20 seconds to find the tab bar.</figcaption>
+            </figure>
+          </div>     
+          <div id="centertext">
+            <p>
+              <b>User Testing Results</b><br>
+              <strong>All users had trouble finding the tab bar</strong>, as seen in the User Testing Session GIF. <br>In addition, users disliked the tab bar and felt like it was out of place:<br>"It doesn't fit into Discord's current style." 
+            </p>
+          </div>   
+        </section>
+
+        <h4>Prototype 2</h4>
+        <p>
+          The home page contains 3 separate sections: welcome section, admin introductions, and bot information. The settings page is accessible through a button located in the top right corner of the home page. Calendar and Resources have their own dedicated pages. The calendar includes a list of events underneath. Instead of having a list of channels to check and uncheck, users can visit the channels and choose to follow or unfollow them.
+        </p>
+        <figure>
+          <img class="prototypeGIF" src="discord/prototype2.gif" alt="Gif of Prototype 2"/>
+          <figcaption>Prototype 2</figcaption>
+        </figure>
+        <p>
+          <b>User Testing Results</b>
+        </p><p>
+          <strong>All users liked the calendar page.</strong> They liked that it was "by itself" and "quickly accessible." They thought that the events list was a useful feature as well. 
+        </p><p>
+          "Looking through a list is easier than searching a calendar."
+        </p><p>
+          The unfollow/follow button was preferred over check marking boxes. The function of the button is more clear than the checkmarks. Notification settings were suggested as an additional feature next to the button.<br></p>
+        <p>
+          <strong>The Resource page name can be misleading.</strong> 2 participants expected bot information to be on that page.
+        </p>
+
+        <h4>Design Decisions Moving Forward</h4>
+        <p>
+          During the user testing session, the <strong>second prototype performed much better than the first.</strong> Users felt that the second prototype was more similar to Discord's current interface than the first prototype. Task based user tests also revealed that it is <strong>quicker to perform tasks and find features in the second prototype</strong> compared to the first. Due to this, I continued developing the second prototype.
+        </p>
+        <h4>Alternate Pages</h4>
+        <p>
+          While creating a high fidelity prototype, <strong>I created alternate designs of two of the pages.</strong> The admin and bot information that was located on the home page was moved to the resource page. When tested, it was found that <strong>users preferred the new page designs</strong> to the old ones. With that in mind, the final high fidelity prototype was made.
+        </p>
+        <section class="centerItems">
+        <figure class="altPG">
+          <img src="discord/server home.png"/>
+          <figcaption>Home Page Before</figcaption>
+        </figure>
+        <figure class="altPG">
+          <img src="discord/server home alternate.png"/>
+          <figcaption>Home Page After</figcaption>
+        </figure>
+        <figure class="altPG">
+          <img src="discord/server resources alternate.png"/>
+          <figcaption>Resource Page Before</figcaption>
+        </figure>
+        <figure class="altPG">
+          <img src="discord/server resources alternate.png"/>
+          <figcaption>Resource Page After</figcaption>
+        </figure>
+        </section>
+        <h3><span class="headingBG">Final Iteration</span></h3>
+        <img class="prototypeGIF" src="discord/finalprototype.gif"/>
+        <p>Overall users found that the added features, such as the calendar and admin section were extremely helpful. </p>
+        <p>Events would no longer be buried in the announcements page and one participant felt that the calendar would be beneficial outside of organizational use too. “Me and my friends plan trips over Discord so [the calendar] would be really useful”</p>
+        <p>Participants also felt that admin and bot information would make servers easier to navigate as they would know who to go to for questions and how to use the server.</p>
+
+        <h3><span class="headingBG">Reflection</span></h3>
+        <p>
+          This project was a huge undertaking and from it, I feel that I've gained so much more knowledge about the design process and myself.
+        </p><p>
+          To start off, the sketches I drew made me realize how effective speed sketching is, not only for generating a multitude of design ideas but also for remind myself not to get too attached to one design or solution.
+        </p><p>
+          Like wise, I realized that it's very easy for me to get carried away with creating a design or prototype. The first 2 prototypes I made were supposed to be low fidelity wire frames. To start them, I took a few screenshots of Discord to make the process of creating the base easier. However, while doing so, I became carried away with making it pretty and exactly like how Discord looks. It also caused project scope creep because I kept adding small features that weren't necessary to the overall project, such as all the interactions I made for the calendar and even the resource page as a whole. This really slowed me down and made me forget about the objective of the project. It also might have biased the participants of my first round of interviews. Because it looked so similar to Discord, many of the participants were immediately impressed.
+        </p><p>
+          Now that I am away of how immersed I can get in creating a design/wireframe, I will be more mindful and stop myself from making the same mistakes in the future. I know it is important to produce wireframes quickly and I want to be able to keep up with my future project timelines without over exerting myself.
+        </p><p>
+          Overall, this was a great dive into the design process and I look forward to carrying on the lessons and skills I learned from this into the future. 
+        </p>
+
+
+      </section>
+    </main>
+    
+    <footer>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="index.html#projectList">Projects</a>
+        <a href="about.html" >About</a>
+        <a href="Camille Beltran Resume online.pdf">Resume</a>
+      </nav>
+      <h6> @2021 by Camille Beltran </h6>
+    </footer>
+
+  </body>
+
+</html>
+
