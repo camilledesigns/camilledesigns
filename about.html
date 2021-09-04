@@ -3,39 +3,61 @@
   <head>
     <meta charset="utf-8">
     <meta name = "viewport" content="width=device-width, initial-scale=1">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="stylesheet.css">
-  
-
+    <meta name = "key words" content="UX, Case Study">
+    <meta name="Author" content="Camille Beltran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Redesign</title>
+    <link rel="stylesheet" href="stylesheet.css" type ="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">   
+    <script src="website.js"></script>
   </head>
-  <body style = "background-color: aliceblue;">
-    
+
+  <body>
     <header>
-          <nav style="float:right">
-            <a href="index.html">Home</a>
-            <a href="page2.html">Projects</a>
-            <a class="active" href="about.html">About</a>
-            <a href="index.html" >Resume</a>
-          </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <div id="dropDown">
+          <a href="index.html#projectList">Projects</a>
+          <div id= "dropMenu">
+            <a href = "DiscordProject.html">Discord Case Study</a>
+            <a href = "ANFAProject.html">ANFA Site Design</a>
+          </div>
+        </div>
+        <a class="active" href="about.html">About</a>
+        <a href="Camille Beltran Resume online.pdf">Resume</a>
+      </nav>
     </header>
     
     <main>
-      <h1 class="title">About</h1>
-      <p>About me </p>
-      <a href = "index.html"><b>Back to home page!</b></a>
-      <article>
-        <!-- it'll know an article goes here-->
-        <section>
-          <!-- include headers in sections-->
-        </section>
-        <section>
-          
-        </section>
-      </article>
+      <section class="about">
+        <div>
+        <a id="helloMouse"><img src="about/meblob1.png" class="aboutPic"></a>
+        </div>
+        <div>
+        <h1>About Me</h1>
+        <p>Hi! I'm Camille Beltran, a UX Designer and recent UCSD grad. While at UCSD, I studied Cognitive Science, with a focus on design and interaction.</p>
+        <p>I was drawn to interaction design because of my love of working with people and interest in learning different thought processes. I also get so frustrated with technology which inspires me to make it better for own self. No matter what the reason, I am passionate about UX design and I thoroughly enjoy the iterative process that is design. </p>
+        <p>If you're interested in my work:</p>
+        <ul>
+          <li>check out my <a href="Camille Beltran Resume online.pdf">resume</a></li>
+          <li>connect with me on <a href="https://www.linkedin.com/in/camille-beltran/">LinkedIn</a></li>
+          <li>or shoot me an email at <a href="mailto:camillepbeltran@gmail.com">camillepbeltran@gmail.com</a></li>
+        </ul>
+      </div>
+    </section>
+   
     </main>
-    
+   
     <footer>
-
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="index.html#projectList">Projects</a>
+        <a href="about.html" >About</a>
+        <a href="Camille Beltran Resume online.pdf">Resume</a>
+      </nav>
+      <h6> @2021 by Camille Beltran </h6>
     </footer>
 
   </body>
