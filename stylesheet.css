@@ -306,6 +306,16 @@ PROJECT PAGE Write Up
 .headingBG.greenHead{
     background-image: url("blob/greenHeadBlob.png");
 }
+
+.greenheadingBG{
+    background-image: url("blob/greenHeadBlob.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+}
+
 .centerItems{
     text-align: center;
 }
